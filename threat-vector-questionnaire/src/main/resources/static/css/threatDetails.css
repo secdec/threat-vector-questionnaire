@@ -1,0 +1,57 @@
+
+
+a {
+    text-decoration: none !important;
+}
+
+#threatDetailsTable{
+	width:100%;
+}
+
+.detailItem{
+	vertical-align:top;
+}
+
+.detailListItem{
+	float: left;
+}
+
+.detailFont{
+	color:#000000;
+}
+
+.detailList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display:inline;
+}
+
+#space{
+	padding: 15px;
+}
+
+.label{
+	font-weight: bold;
+}
+
+.pageLabel{
+	font-weight: bold;
+	size: 4;
+}
+
+.panelContent{
+	margin:5px 5px 5px 5px;
+}
+
+.centerPanelContent{
+	height:200px;
+	width: 100%;
+}
+
+
+#threatDetailPanel{
+	display:hidden;
+	pointer-events: none;
+}

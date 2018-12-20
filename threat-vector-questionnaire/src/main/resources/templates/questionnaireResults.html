@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="Threat Generator" lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    
+   	<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css" href="/webjars/font-awesome/css/font-awesome.min.css" th:href="@{/webjars/font-awesome/css/font-awesome.min.css}"></link>
+    <link rel="stylesheet" type="text/css" href="../../../css/header.css" th:href="@{/css/header.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../../css/projectView.css" th:href="@{/css/projectView.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../../css/fileView.css" th:href="@{/css/fileView.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../../css/threatLibrary.css" th:href="@{/css/threatLibrary.css}"/>
+    <link rel="stylesheet" type="text/css"  href="../../css/questionnaire.css" th:href="@{/css/questionnaire.css}" />
+    
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js" th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script type="text/javascript" src="../../static/js/fileView.js" th:src="@{/js/fileView.js}"></script>
+    <script type="text/javascript" src="../../static/js/fileView.js" th:src="@{/js/questionnaireResult.js}"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+  </head>
+  
+<body>
+
+  	<div th:replace="fragments/header :: header('questionnaire')"></div>
+  	  	
+  	<div class="container-fluid">
+  	
+  		<div class='row'>
+  			<div th:replace="fragments/questionnaireFragments/questionnaireNav :: questionnaireNav('SurveyResults')"></div>
+  		</div>
+  		
+  		<div class='row'>
+  			<div class="col-md-12">
+  				<div>
+		  			<font>Questionnaire Name: </font><span th:text="${questionnaireName}"></span>
+	  			</div>	
+	  		</div>
+	  	</div>
+	  	
+  		<div class="space"></div>
+  		
+	  	<div class="row noPadding addBorderTop">
+	  		<div class="col-lg-2">
+	  			<div class="row">
+					<div th:replace="fragments/questionnaireFragments/questionnaireFragments :: questionTags"></div> 		
+	  			</div>	
+			</div>
+			<div class="col-lg-10 addMargin">
+				<div th:replace="fragments/questionnaireFragments/questionnaireFragments :: resultsSection"></div>
+			</div>
+	  	</div>
+	  	
+	</div>
+	
+</body>
+</html>

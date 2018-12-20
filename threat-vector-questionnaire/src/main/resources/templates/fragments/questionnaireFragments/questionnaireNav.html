@@ -1,0 +1,10 @@
+<div th:fragment="questionnaireNav(activeTab)">
+
+<nav class="navbar navbar-default noBorder">
+    <ul class="nav navbar-nav noBorder">
+      <li  th:classappend="${activeTab == 'SecuritySurvey'}? 'active' : ''"><a th:href="@{'/' + ${resultID}}">Questionnaire</a></li>
+      <li  th:classappend="${activeTab == 'SurveyResults'}? 'active' : ''"><a th:href="@{'/' + ${resultID} + '/results'}">Questionnaire Results</a></li>
+    </ul>
+</nav>
+
+</div>

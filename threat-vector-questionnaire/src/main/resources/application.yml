@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: web
+  datasource:
+    jndi-name: jdbc/ThreatVectorDatabase
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect

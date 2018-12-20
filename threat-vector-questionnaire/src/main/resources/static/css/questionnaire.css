@@ -1,0 +1,50 @@
+.space{
+	padding:15px;
+}
+
+.noBorder{
+	border: 0px;
+}
+
+.noPadding{
+	padding: 0px;
+}
+
+font{
+	font-size: large;
+	font-weight: bold;
+}
+
+
+.filterBtn{
+	background-color: #f5f5f5;
+	border-radius: 0px;
+}
+
+.filterBtn:hover{
+    background-color: #2f6ec9;
+    color: #ffffff;
+}
+
+.activeButton:clicked{
+    background-color: #2f6ec9;
+    color: #ffffff;
+}
+
+.activeButton:focus{
+    background-color: #2f6ec9;
+    color: #ffffff;
+}
+
+.activeButton{
+    background-color: #2f6ec9;
+    color: #ffffff;
+}
+
+.addBorderTop{
+	border-top: 2px solid #b7b7b7;
+}
+
+ul.altRow.list-group.noMargin > li:nth-of-type(odd){
+    background: #e0e0e0;
+}

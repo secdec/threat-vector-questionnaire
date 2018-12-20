@@ -1,0 +1,9 @@
+This project contains the artifacts related to the Questionnaire project.  
+
+To build the project, execute "gradle clean war" while within the project root directory. The jar will be outputted to  build/libs.   
+
+The latest version of the following is required to build the project:  
+    -Gradle (at least 3.4.1)  
+    -Java 8
+    
+The web application does not support Internet Explorer.

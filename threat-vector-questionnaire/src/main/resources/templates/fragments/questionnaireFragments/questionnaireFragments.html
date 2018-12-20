@@ -1,0 +1,177 @@
+<div th:fragment="questionTags">			
+		<nav class="sidebar noMargin">
+	         <ul class="list-unstyled">
+   	            <li><button class="btn btn-block activeButton showAllFilter" name="questionFilter">All</button></li>
+   	            <li><button class="btn btn-block questionFilter" name="questionFilter" value="audit">Audit</button></li>
+	            <li><button class="btn btn-block questionFilter" name="questionFilter" value="authenticateActors">Authenticate Actors</button></li>
+	            <li><button class="btn btn-block questionFilter" name="questionFilter" value="authorizeActors">Authorize Actors</button></li>
+	            <li><button class="btn btn-block questionFilter" name="questionFilter" value="crossCutting">Cross Cutting</button></li>
+	            <li><button class="btn btn-block questionFilter" name="questionFilter" value="encryptData">Encrypt Data</button></li>
+	            <li><button class="btn btn-block questionFilter" name="questionFilter" value="identifyActors">Identify Actors</button></li>
+	            <li><button class="btn btn-block questionFilter" name="questionFilter" value="limitAccess">Limit Access</button></li>
+	            <li><button class="btn btn-block questionFilter" name="questionFilter" value="lockComputer">Lock Computer</button></li>
+	            <li><button class="btn btn-block questionFilter" name="questionFilter" value="manageUserSessions">Manage User Sessions</button></li>
+	            <li><button class="btn btn-block questionFilter" name="questionFilter" value="validateInputs">Validate Inputs</button></li>
+	            <li><button class="btn btn-block questionFilter" name="questionFilter" value="verifyMessageIntegrity">Verify Message Integrity</button></li>
+	            <li><button class="btn btn-block questionFilter" name="questionFilter" value="limitExposure">Limit Exposure</button></li>
+	         </ul>
+		</nav>
+</div>
+
+<div class="threatTabs" th:fragment="resultsSection">
+	<div class="container-fluid">
+
+		<div class="row">
+			<div class="col-md-4 noPadding">
+				<input class="search form-control" id="fileSearchBar"
+					onkeyup="searchFiles()" placeholder="Search by Threat Name" />
+			</div>		
+		</div>
+		
+		<div class="row">
+			<div class="col-md-12 noPaddingLeft">
+			
+				<div class="panel-group fileHeight" id="accordion">
+					<ul id="fileList" class="list-group noBorderList">
+						<li class="list-group-item fileItem noPaddingLeft"
+							th:each="threat: ${threats}">
+							<div class="panel panel-default">
+								<div class="panel-heading fileHeading" data-toggle="collapse"
+									th:href="'#' + ${threat.threatId} +'p'">
+									<div class="row" data-toggle="collapse"
+										th:href="'#' + ${threat.threatId}">
+										<div class="col-md-6">
+											<h4 class="panel-title" th:text="${threat.name}">Threat 1</h4>
+										</div>
+									</div>
+								</div>
+								<div th:id="${threat.threatId}+'p'" class="panel-collapse collapse">
+
+									<div class="panel with-nav-tabs panel-default">
+										<div>
+											<ul class="nav nav-tabs">
+												<li class="active"><a
+													th:href="'#'+${threat.threatId}+'defaultTab1'" data-toggle="tab">Overview</a></li>
+												<li><a th:href="'#'+${threat.threatId}+'defaultTab3'"
+													data-toggle="tab">CAWE Details</a></li>
+											</ul>
+										</div>
+										<div class="panel-body">
+											<div class="tab-content">
+												<div class="tab-pane fade in active"
+													th:id="${threat.threatId}+'defaultTab1'">
+													<div
+														th:replace="fragments/questionnaireFragments/questionnaireFragments :: overview(${threat})"></div>
+												</div>
+												<div class="tab-pane fade" th:id="${threat.threatId}+'defaultTab3'">
+												<div
+														th:replace="fragments/questionnaireFragments/questionnaireFragments :: cawe(${threat})"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>	
+
+
+<div class="threatTabs" th:fragment="overview(threat)">
+
+	<div class="row">
+		<div class="col-md-6">
+			<div class="input-group">
+				<span class="threatFont">Threat Name:</span><br />
+				<span th:text="${threat.name}">Threat Name</span>
+				<div class="space"></div>
+				<span class="threatFont">Stride Type:</span><br />
+				<span th:each="strideType : ${threat.strideTypes}" th:text="${strideType}">Threat STRIDE</span>
+				<div class="space"></div>
+				<span class="threatFont">Threat Description:</span><br />
+				<span th:text="${threat.description}">Threat Description</span>
+				<div class="space"></div>
+				<span class="threatFont">Mitigation Recommendation:</span><br />
+				<span th:text="${threat.recommendation}">Threat Description</span>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="input-group">
+				<span class="threatFont">Threat Severity:</span><br />
+				<span th:text="${threat.severity}">Threat Severity</span><br />
+				<div class="space"></div>
+				<span class="threatFont">Security Capabilities:</span><br />
+				<div th:each="cawe : ${threat.cawes}">
+					<span class="secCapItem" th:id="${secCap.id}" th:each="secCap : ${cawe.securityCapabilities}" th:text="${secCap.name}">secCap</span>
+				</div>
+				<div class="space"></div>
+				<span class="threatFont">Related CAWE</span><br />
+				<ul class="list-inline">
+					<li class="noBullets" th:each="cawe : ${threat.cawes}"><a th:text="${cawe.id}" th:target="_blank" th:href="@{'https://cwe.mitre.org/data/definitions/' + ${cawe.id} + '.html'}">CAWE ID</a></li>
+				</ul>		
+				<div class="space"></div>
+				<span class="threatFont">Related CAPEC</span><br />
+				<ul class="list-inline">
+					<li class="noBullets" th:each="cawe: ${threat.cawes}">
+						<a th:each="capec: ${cawe.capecs}" th:text="${capec.id}" th:target="_blank" th:href="@{'https://capec.mitre.org/data/definitions/' + ${capec.id} + '.html'}">CAWE ID</a>
+					</li>
+				</ul>		
+				</div>
+			</div>
+		</div>
+		<div class="space"></div>
+	</div>
+
+	
+
+<div class="threatTabs" th:fragment="cawe(threat)">
+
+	<div class="panel-group" id="accordion">
+		<ul id="fileList" class="list-group noBorderList scrollingList">
+		
+			<li class="list-group-item fileItem noPaddingLeft"
+				th:each="cawe: ${threat.cawes}">
+				
+				<div class="panel panel-default">
+					<div class="panel-heading fileHeading" data-toggle="collapse"
+						th:href="'#'+${cawe.id}+'c'">
+						<div class="row" data-toggle="collapse"
+							th:href="'#' + ${threat.threatId} +'c'">
+							<div class="col-md-12">
+								<h4 class="panel-title" th:text="${cawe.name}">Threat1</h4>
+							</div>
+						</div>
+					</div>
+					<div th:id="${cawe.id}+'c'" class="panel-collapse collapse">
+						<div class="panel-body">
+						
+							<div class="row">
+								<div class="col-md-6">
+									<div class="input-group">
+										<span class="threatFont">CAWE Name:</span><br />
+										<span th:text="${cawe.name}">Threat Name</span>
+										<div class="space"></div>
+										<span class="threatFont">CAWE Impact Type:</span><br />
+										<div th:each="impact: ${cawe.impacts}">
+											<span  th:text="${impact}">Threat Impact</span>
+										</div>
+										<div class="space"></div>
+										<span class="threatFont">CAWE Description:</span><br />
+										<span th:text="${cawe.description}">Threat Description</span>
+										<div class="space"></div>
+										<a target="_blank" th:href="@{'https://cwe.mitre.org/data/definitions/' + ${cawe.id} + '.html'}">More Details</a>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>

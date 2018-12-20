@@ -1,0 +1,25 @@
+.scrollBarComp2{
+	padding-right:17px;
+}
+
+.fullHeight{
+	max-height: 800px
+}
+
+.bottomBorder{
+	border-bottom: 1px #dddddd solid;
+}
+
+.btnColor{
+	background-color:#ffffff;
+	color: #1a7dd2;
+	border: 1px #1a7dd2 solid;
+}
+
+ul.altRow.list-group.noMargin > li:nth-of-type(odd){
+    background: #e0e0e0;
+}
+
+.noBullets{
+	font-weight:bold;
+}

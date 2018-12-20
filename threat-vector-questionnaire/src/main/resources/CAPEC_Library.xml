@@ -1,0 +1,1523 @@
+<?xml version='1.0' encoding='utf-8'?>
+<CAPEC_Library version="1.0">
+
+<CAPEC ID ="1">
+	<CAPEC_Name>
+		Accessing Functionality Not Properly Constrained by ACLs
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="3">
+	<CAPEC_Name>
+		Using Leading 'Ghost' Character Sequences to Bypass Input Filters
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="4">
+	<CAPEC_Name>
+		Using Alternative IP Address Encodings
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="6">
+	<CAPEC_Name>
+		Argument Injection
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="7">
+	<CAPEC_Name>
+		Blind SQL Injection
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="8">
+	<CAPEC_Name>
+		Buffer Overflow in an API Call
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="9">
+	<CAPEC_Name>
+		Buffer Overflow in Local Command-Line Utilities
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="10">
+	<CAPEC_Name>
+		Buffer Overflow via Environment Variables
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="11">
+	<CAPEC_Name>
+		Cause Web Server Misclassification
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="12">
+	<CAPEC_Name>
+		Choosing Message Identifier
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="13">
+	<CAPEC_Name>
+		Subverting Environment Variable Values
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="14">
+	<CAPEC_Name>
+		Client-side Injection-induced Buffer Overflow
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="15">
+	<CAPEC_Name>
+		Command Delimiters
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="16">
+	<CAPEC_Name>
+		Dictionary-based Password Attack
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="17">
+	<CAPEC_Name>
+		Accessing, Modifying or Executing Executable Files
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="19">
+	<CAPEC_Name>
+		Embedding Scripts within Scripts
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="20">
+	<CAPEC_Name>
+		Encryption Brute Forcing
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="21">
+	<CAPEC_Name>
+		Exploitation of Trusted Credentials
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="22">
+	<CAPEC_Name>
+		Exploiting Trust in Client
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="23">
+	<CAPEC_Name>
+		File Content Injection
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="24">
+	<CAPEC_Name>
+		Filter Failure through Buffer Overflow
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="26">
+	<CAPEC_Name>
+		Leveraging Race Conditions
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="28">
+	<CAPEC_Name>
+		Fuzzing
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="29">
+	<CAPEC_Name>
+		Leveraging Time-of-Check and Time-of-Use (TOCTOU) Race Conditions
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="30">
+	<CAPEC_Name>
+		Hijacking a Privileged Thread of Execution
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="31">
+	<CAPEC_Name>
+		Accessing/Intercepting/Modifying HTTP Cookies
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="33">
+	<CAPEC_Name>
+		HTTP Request Smuggling
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="34">
+	<CAPEC_Name>
+		HTTP Response Splitting
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="35">
+	<CAPEC_Name>
+		Leverage Executable Code in Non-Executable Files
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="36">
+	<CAPEC_Name>
+		Using Unpublished APIs
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="37">
+	<CAPEC_Name>
+		Retrieve Embedded Sensitive Data
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="38">
+	<CAPEC_Name>
+		Leveraging/Manipulating Configuration File Search Paths
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="39">
+	<CAPEC_Name>
+		Manipulating Opaque Client-based Data Tokens
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="40">
+	<CAPEC_Name>
+		Manipulating Writeable Terminal Devices
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="41">
+	<CAPEC_Name>
+		Using Meta-characters in E-mail Headers to Inject Malicious Payloads
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="42">
+	<CAPEC_Name>
+		MIME Conversion
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="43">
+	<CAPEC_Name>
+		Exploiting Multiple Input Interpretation Layers
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="45">
+	<CAPEC_Name>
+		Buffer Overflow via Symbolic Links
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="46">
+	<CAPEC_Name>
+		Overflow Variables and Tags
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="47">
+	<CAPEC_Name>
+		Buffer Overflow via Parameter Expansion
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="49">
+	<CAPEC_Name>
+		Password Brute Forcing
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="50">
+	<CAPEC_Name>
+		Password Recovery Exploitation
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="51">
+	<CAPEC_Name>
+		Poison Web Service Registry
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="52">
+	<CAPEC_Name>
+		Embedding NULL Bytes
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="53">
+	<CAPEC_Name>
+		Postfix, Null Terminate, and Backslash
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="54">
+	<CAPEC_Name>
+		Query System for Information
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="55">
+	<CAPEC_Name>
+		Rainbow Table Password Cracking
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="57">
+	<CAPEC_Name>
+		Utilizing REST's Trust in the System Resource to Register Man in the Middle
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="58">
+	<CAPEC_Name>
+		Restful Privilege Elevation
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="59">
+	<CAPEC_Name>
+		Session Credential Falsification through Prediction
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="60">
+	<CAPEC_Name>
+		Reusing Session IDs (aka Session Replay)
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="61">
+	<CAPEC_Name>
+		Session Fixation
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="62">
+	<CAPEC_Name>
+		Cross Site Request Forgery
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="63">
+	<CAPEC_Name>
+		Cross-Site Scripting (XSS)
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="64">
+	<CAPEC_Name>
+		Using Slashes and URL Encoding Combined to Bypass Validation Logic
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="65">
+	<CAPEC_Name>
+		Sniff Application Code
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="66">
+	<CAPEC_Name>
+		SQL Injection
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="67">
+	<CAPEC_Name>
+		String Format Overflow in syslog()
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="68">
+	<CAPEC_Name>
+		Subvert Code-signing Facilities
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="69">
+	<CAPEC_Name>
+		Target Programs with Elevated Privileges
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="70">
+	<CAPEC_Name>
+		Try Common or Default Usernames and Passwords
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="71">
+	<CAPEC_Name>
+		Using Unicode Encoding to Bypass Validation Logic
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="72">
+	<CAPEC_Name>
+		URL Encoding
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="73">
+	<CAPEC_Name>
+		User-Controlled Filename
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="74">
+	<CAPEC_Name>
+		Manipulating User State
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="75">
+	<CAPEC_Name>
+		Manipulating Writeable Configuration Files
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="76">
+	<CAPEC_Name>
+		Manipulating Web Input to File System Calls
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="77">
+	<CAPEC_Name>
+		Manipulating User-Controlled Variables
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="78">
+	<CAPEC_Name>
+		Using Escaped Slashes in Alternate Encoding
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="79">
+	<CAPEC_Name>
+		Using Slashes in Alternate Encoding
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="80">
+	<CAPEC_Name>
+		Using UTF-8 Encoding to Bypass Validation Logic
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="81">
+	<CAPEC_Name>
+		Web Logs Tampering
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="82">
+	<CAPEC_Name>
+		Violating Implicit Assumptions Regarding XML Content (aka XML Denial of Service (XDoS))
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="83">
+	<CAPEC_Name>
+		XPath Injection
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="84">
+	<CAPEC_Name>
+		XQuery Injection
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="85">
+	<CAPEC_Name>
+		AJAX Fingerprinting
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="87">
+	<CAPEC_Name>
+		Forceful Browsing
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="88">
+	<CAPEC_Name>
+		OS Command Injection
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="89">
+	<CAPEC_Name>
+		Pharming
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="90">
+	<CAPEC_Name>
+		Reflection Attack in Authentication Protocol
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="93">
+	<CAPEC_Name>
+		Log Injection-Tampering-Forging
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="94">
+	<CAPEC_Name>
+		Man in the Middle Attack
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="95">
+	<CAPEC_Name>
+		WSDL Scanning
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="97">
+	<CAPEC_Name>
+		Cryptanalysis
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="99">
+	<CAPEC_Name>
+		XML Parser Attack
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="101">
+	<CAPEC_Name>
+		Server Side Include (SSI) Injection
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+<CAPEC ID ="102">
+	<CAPEC_Name>
+		Session Sidejacking
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="104">
+	<CAPEC_Name>
+		Cross Zone Scripting
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="108">
+	<CAPEC_Name>
+		Command Line Execution through SQL Injection
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="109">
+	<CAPEC_Name>
+		Object Relational Mapping Injection
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="110">
+	<CAPEC_Name>
+		SQL Injection through SOAP Parameter Tampering
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="111">
+	<CAPEC_Name>
+		JSON Hijacking (aka JavaScript Hijacking)
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="112">
+	<CAPEC_Name>
+		Brute Force
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="114">
+	<CAPEC_Name>
+		Authentication Abuse
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="116">
+	<CAPEC_Name>
+		Excavation
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="117">
+	<CAPEC_Name>
+		Interception
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="121">
+	<CAPEC_Name>
+		Exploit Test APIs
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="122">
+	<CAPEC_Name>
+		Privilege Abuse
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="125">
+	<CAPEC_Name>
+		Flooding
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="127">
+	<CAPEC_Name>
+		Directory Indexing
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="130">
+	<CAPEC_Name>
+		Excessive Allocation
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="131">
+	<CAPEC_Name>
+		Resource Leak Exposure
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="132">
+	<CAPEC_Name>
+		Symlink Attack
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="133">
+	<CAPEC_Name>
+		Try All Common Switches
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="135">
+	<CAPEC_Name>
+		Format String Injection
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="136">
+	<CAPEC_Name>
+		LDAP Injection
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="141">
+	<CAPEC_Name>
+		Cache Poisoning
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="142">
+	<CAPEC_Name>
+		DNS Cache Poisoning
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="146">
+	<CAPEC_Name>
+		XML Schema Poisoning
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="147">
+	<CAPEC_Name>
+		XML Ping of the Death
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="148">
+	<CAPEC_Name>
+		Content Spoofing
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="151">
+	<CAPEC_Name>
+		Identity Spoofing
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="155">
+	<CAPEC_Name>
+		Screen Temporary Files for Sensitive Information
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="157">
+	<CAPEC_Name>
+		Sniffing Attacks
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="158">
+	<CAPEC_Name>
+		Sniffing Network Traffic
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="162">
+	<CAPEC_Name>
+		Manipulating Hidden Fields
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="168">
+	<CAPEC_Name>
+		Windows ::DATA Alternate Data Stream
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="175">
+	<CAPEC_Name>
+		Code Inclusion
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="180">
+	<CAPEC_Name>
+		Exploiting Incorrectly Configured Access Control Security Levels
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="182">
+	<CAPEC_Name>
+		Flash Injection
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="184">
+	<CAPEC_Name>
+		Software Integrity Attack
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="185">
+	<CAPEC_Name>
+		Malicious Software Download
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="186">
+	<CAPEC_Name>
+		Malicious Software Update
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="187">
+	<CAPEC_Name>
+		Malicious Automated Software Update
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="190">
+	<CAPEC_Name>
+		Reverse Engineer an Executable to Expose Assumed Hidden Functionality or Content
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="191">
+	<CAPEC_Name>
+		Read Sensitive Strings Within an Executable
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="193">
+	<CAPEC_Name>
+		PHP Remote File Inclusion
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="194">
+	<CAPEC_Name>
+		Fake the Source of Data
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="197">
+	<CAPEC_Name>
+		XML Entity Expansion
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="202">
+	<CAPEC_Name>
+		Create Malicious Client
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="204">
+	<CAPEC_Name>
+		Lifting Sensitive Data Embedded in Cache
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="207">
+	<CAPEC_Name>
+		Removing Important Client Functionality
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="208">
+	<CAPEC_Name>
+		Removing/short-circuiting 'Purse' logic: removing/mutating 'cash' decrements
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="209">
+	<CAPEC_Name>
+		XSS Using MIME Type Mismatch
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="214">
+	<CAPEC_Name>
+		Fuzzing for garnering J2EE/.NET-based stack traces, for application mapping
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="215">
+	<CAPEC_Name>
+		Fuzzing and observing application log data/errors for application mapping
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="217">
+	<CAPEC_Name>
+		Exploiting Incorrectly Configured SSL
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="218">
+	<CAPEC_Name>
+		Spoofing of UDDI/ebXML Messages
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="219">
+	<CAPEC_Name>
+		XML Routing Detour Attacks
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="220">
+	<CAPEC_Name>
+		Client-Server Protocol Manipulation
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="225">
+	<CAPEC_Name>
+		Subvert Access Control
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="229">
+	<CAPEC_Name>
+		XML Attribute Blowup
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="230">
+	<CAPEC_Name>
+		XML Nested Payloads
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="231">
+	<CAPEC_Name>
+		XML Oversized Payloads
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="234">
+	<CAPEC_Name>
+		Hijacking a privileged process
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="240">
+	<CAPEC_Name>
+		Resource Injection
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="236">
+	<CAPEC_Name>
+		Catching exception throw/signal from privileged block
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="248">
+	<CAPEC_Name>
+		Command Injection
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="250">
+	<CAPEC_Name>
+		XML Injection
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="267">
+	<CAPEC_Name>
+		Leverage Alternate Encoding
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="274">
+	<CAPEC_Name>
+		HTTP Verb Tampering
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="383">
+	<CAPEC_Name>
+		Harvesting Usernames or UserIDs via Application API Event Monitoring
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="384">
+	<CAPEC_Name>
+		Application API Message Manipulation via Man-in-the-Middle
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="385">
+	<CAPEC_Name>
+		Transaction or Event Tampering via Application API Manipulation
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="386">
+	<CAPEC_Name>
+		Application API Navigation Remapping
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="387">
+	<CAPEC_Name>
+		Navigation Remapping To Propagate Malicious Content
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="388">
+	<CAPEC_Name>
+		Application API Button Hijacking
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="389">
+	<CAPEC_Name>
+		Content Spoofing Via Application API Manipulation
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="459">
+	<CAPEC_Name>
+		Creating a Rogue Certification Authority Certificate
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="460">
+	<CAPEC_Name>
+		HTTP Parameter Pollution (HPP)
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="461">
+	<CAPEC_Name>
+		Web Services API Signature Forgery Leveraging Hash Function Extension Weakness
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="462">
+	<CAPEC_Name>
+		Cross-Domain Search Timing
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="463">
+	<CAPEC_Name>
+		Padding Oracle Crypto Attack
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="464">
+	<CAPEC_Name>
+		Evercookie
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="465">
+	<CAPEC_Name>
+		Transparent Proxy Abuse
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="466">
+	<CAPEC_Name>
+		Leveraging Active Man in the Middle Attacks to Bypass Same Origin Policy
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="467">
+	<CAPEC_Name>
+		Cross Site Identification
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="468">
+	<CAPEC_Name>
+		Generic Cross-Browser Cross-Domain Theft
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="469">
+	<CAPEC_Name>
+		HTTP DoS
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="470">
+	<CAPEC_Name>
+		Expanding Control over the Operating System from the Database
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="473">
+	<CAPEC_Name>
+		Signature Spoof
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="477">
+	<CAPEC_Name>
+		Signature Spoofing by Mixing Signed and Unsigned Content
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="484">
+	<CAPEC_Name>
+		XML Client-Side Attack
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="485">
+	<CAPEC_Name>
+		Signature Spoofing by Key Recreation
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="510">
+	<CAPEC_Name>
+		SaaS User Request Forgery
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="588">
+	<CAPEC_Name>
+		DOM-Based XSS
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="591">
+	<CAPEC_Name>
+		Reflected XSS
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="592">
+	<CAPEC_Name>
+		Stored XSS
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="593">
+	<CAPEC_Name>
+		Session Hijacking
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="606">
+	<CAPEC_Name>
+		Weakening of Cellular Encryption
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="608">
+	<CAPEC_Name>
+		Cryptanalysis of Cellular Encryption
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="612">
+	<CAPEC_Name>
+		WiFi MAC Address Tracking
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="613">
+	<CAPEC_Name>
+		WiFi SSID Tracking
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="614">
+	<CAPEC_Name>
+		Rooting SIM Cards
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="618">
+	<CAPEC_Name>
+		Cellular Broadcast Message Request
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="619">
+	<CAPEC_Name>
+		Signal Strength Tracking
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="620">
+	<CAPEC_Name>
+		Drop Encryption Level
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="621">
+	<CAPEC_Name>
+		Analysis of Packet Timing and Sizes
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="622">
+	<CAPEC_Name>
+		Electromagnetic Side-Channel Attack
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+<CAPEC ID ="623">
+	<CAPEC_Name>
+		Compromising Emanations Attack
+	</CAPEC_Name>
+	<CAPEC_Description>
+	</CAPEC_Description>
+</CAPEC>
+
+</CAPEC_Library>

@@ -1,0 +1,12 @@
+<div  id="header" th:fragment="header(activeTab)">
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand">Threat Vector</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li th:class="${activeTab == 'questionnaire'}? 'active' : ''"><a th:href="@{'/'}">Questionnaire</a></li>
+	    </ul>
+	  </div>
+	</nav>
+</div>

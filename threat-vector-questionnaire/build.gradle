@@ -1,0 +1,63 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'war'
+
+group = 'gov.aitek'
+version = '1.8'
+
+description = """"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+repositories {
+     maven { url "https://repo.spring.io/libs-snapshot" }
+     maven { url "https://repo.eclipse.org/content/groups/releases/" }
+     maven { url "http://repo.maven.apache.org/maven2" }
+     mavenLocal()
+}
+
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version:'1.5.2.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version:'1.5.2.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-devtools', version:'1.5.2.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version:'1.5.2.RELEASE'
+    compile group: 'com.h2database', name: 'h2', version:'1.4.193'
+    compile group: 'org.yaml', name: 'snakeyaml', version:'1.17'
+    compile group: 'log4j', name: 'log4j', version:'1.2.17'
+    compile group: 'org.jasypt', name: 'jasypt', version:'1.9.2'
+    compile group: 'org.webjars', name: 'bootstrap', version:'3.3.7'
+    compile group: 'org.webjars', name: 'jquery', version:'2.1.1'
+    compile group: 'org.webjars', name: 'webjars-locator', version:'0.32'
+    compile group: 'org.webjars', name: 'font-awesome', version:'4.7.0'
+    compile group: 'org.eclipse.jgit', name: 'org.eclipse.jgit', version:'4.10.0.201712302008-r'
+    compile group: 'org.apache.commons', name: 'commons-compress', version:'1.15'
+}
+
+//include project classes as jar into war's WEB-INF/lib
+war {
+	classpath = jar.outputs.files + configurations.runtime - configurations.providedRuntime
+}
+
+/*
+ *  use the jar as main artifact, hence letting other projects depend upon this one
+ *  the war is available with a 'war' classifier
+ */
+artifacts {  archives jar }
+
+import org.gradle.api.internal.artifacts.publish.ArchivePublishArtifact;
+
+Configuration archivesConfig = project.getConfigurations().getByName("archives")
+Task warTask = project.getTasks().getByName("war")
+for (PublishArtifact publishArtifact : archivesConfig.getAllArtifacts()) {
+	if (publishArtifact instanceof ArchivePublishArtifact) {
+		ArchivePublishArtifact archivePublishArtifact =
+			(ArchivePublishArtifact)publishArtifact;
+		if (archivePublishArtifact.getArchiveTask() == warTask) {
+			publishArtifact.classifier = 'war'
+		}
+	}
+}

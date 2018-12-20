@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="Threat Generator" lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    
+   	<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css" href="/webjars/font-awesome/css/font-awesome.min.css" th:href="@{/webjars/font-awesome/css/font-awesome.min.css}"></link>
+    <link rel="stylesheet" type="text/css" href="../../../css/header.css" th:href="@{/css/header.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../../css/projectView.css" th:href="@{/css/projectView.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../../css/fileView.css" th:href="@{/css/fileView.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../../css/threatLibrary.css" th:href="@{/css/threatLibrary.css}"/>
+    <link rel="stylesheet" type="text/css" href="../../../css/threatLibrary.css" th:href="@{/css/home.css}"/>
+    
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js" th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script type="text/javascript" src="../../static/js/fileView.js" th:src="@{/js/fileView.js}"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+  </head>
+  
+<body>
+
+
+  	<div th:replace="fragments/header :: header('questionnaire')"></div>
+  	  	
+  	<div class="container-fluid">
+  	
+  		<a th:href="@{'/new'}"><button class="btn btnColor" type="button">CREATE NEW QUESTIONNAIRE</button></a>
+  		<div class="space"></div>
+	  	<div class="row">
+	  			<div class="threatList">
+					<ul class="list-group noMargin">
+						<li class="list-group-item">
+							<div class="row scrollBarComp2">
+								<div class="col-md-6 text-left noBullets">Questionnaire Name</div>
+								<div class="col-md-3 text-center noBullets">Completed</div>
+								<div class="col-md-3 text-center noBullets">Last Updated</div>
+							</div>
+						</li>
+					</ul>
+
+					<div class="scrollingList fullHeight">
+						<ul class="list-group noMargin" th:each="questionnaire: ${questionnaires}">
+						
+							<li class="list-group-item">
+								<div class="row">
+									<div class="col-md-6 text-left">
+										<a th:href="@{'/' + ${questionnaire.id}}" th:text="${questionnaire.name}">Questionnaire 1</a>
+									</div>
+									<div class="col-md-3 text-center">
+										<img th:src="@{/images/complete.png}" width="30" height="30" style="vertical-align:middle;"/>
+									</div>
+									
+									<div class="col-md-3 text-center">
+										<div>Last Updated</div>
+									</div>
+				
+									<div class="space"></div>
+								</div>
+							</li>					
+						</ul>
+					</div>
+				</div>
+	  	</div>
+	</div>
+	
+</body>
+</html>

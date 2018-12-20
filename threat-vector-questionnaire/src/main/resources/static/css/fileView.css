@@ -1,0 +1,200 @@
+h6{
+	font-weight: bold;
+}
+
+.btn.btn-primary{
+	display: block;
+    text-align: center;
+	border-radius:0px;
+	
+}
+
+.questionnaireFilter{
+	display: block;
+    text-align: center;
+	color: white;
+	width: 100%;
+	border-radius:0px;
+	
+}
+
+.threat-count-box{
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 4px;
+	border-color: #eeeeee;
+	padding: 8px;
+}
+
+.well{
+	border-width: 2px;
+	color: #000000;
+	background-color: inherit;
+}
+
+.threat-count-box.critical{
+	border-color: #ff4444;
+}
+
+.threat-count-box.high{
+	border-color: #ff8751;
+}
+
+.threat-count-box.medium{
+	border-color: #ffb249;
+}
+
+.threat-count-box.low{
+	border-color: #ffd93f;
+}
+
+.threat-count-box.mitigated{
+	border-color: #41ee2f;
+}
+
+.critical{
+	border-color: #ff4444;
+}
+
+.high{
+	border-color: #ff8751;
+}
+
+.medium{
+	border-color: #ffb249;
+}
+
+.low{
+	border-color: #ffd93f;
+}
+
+.mitigated{
+	border-color: #41ee2f;
+}
+
+.threat-count-box .header{
+	color: #8a8888;
+	margin:auto;
+}
+
+.threat-count-box .content{
+	font-weight: bold;
+	font-size: 16px;
+	margin: auto;
+}
+
+.zeroCount{
+	border-color: #eeeeee;
+}
+
+.threatFont{
+	font-weight:bold;
+}
+
+.scrollingList {
+    flex: 1 1 0; 
+    display: -moz-box; 
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height:inherit;
+}
+
+.threatListHeight{
+	max-height:410px;
+}
+
+.fileHeight{
+	height:650px;
+}
+
+.noMargin{
+	margin: 0px;
+}
+
+.nameSelect{
+	text-align:left;
+}
+
+.checkboxSelect{
+	padding:0px;
+	text-align:right;
+}
+
+.scrollBarComp{
+	padding-right:20px;
+}
+
+.statusImage{
+	height:30px;
+	width:30px;
+}
+
+.bulkAction{
+	color:black;
+	background-color: #4daaf6;
+	border-radius:0px;
+}
+
+.totalThreats .well{
+	width:100%;
+}
+
+.totalThreats .col-md-2{
+	padding:2px
+}
+
+.col-md-4.noPadding{
+	padding: 0px;
+}
+
+.col-md-12.noPaddingLeft{
+	padding-left: 0px
+}
+
+.noPaddingLeft{
+	padding-left: 0px
+}
+
+.addPadding-2px{
+	padding: 2px;
+}
+
+.addPadding15px{
+	padding: 15px;
+}
+
+.addPadding30px{
+	padding-right: 30px;
+}
+
+.filterBtn{
+	color: #000000;
+	background-color: #f5f5f5;
+	border-radius: 0px;
+	border: 0px;
+}
+
+.filterBtn:hover{
+    background-color: #2f6ec9;
+    color: #ffffff;
+}
+
+.activeButton:clicked{
+    background-color: #2f6ec9;
+    color: #ffffff;
+}
+
+.activeButton:focus{
+    background-color: #2f6ec9;
+    color: #ffffff;
+}
+
+.activeButton{
+    background-color: #2f6ec9;
+    color: #ffffff;
+}
+
+.panel.panel-default.questionnaireThreat{
+	border:2px solid #e858e1;
+}

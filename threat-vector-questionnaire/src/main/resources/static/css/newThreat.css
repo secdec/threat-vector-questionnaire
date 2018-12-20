@@ -1,0 +1,75 @@
+*{
+	font-family: Helvetica;
+	outline: none;
+}
+
+button{
+	color:#2196f3;
+	background-color: #ffffff;
+	font-size: 14px;
+	padding: 10px;
+	border-radius: 8px;
+	border-color: #2196f3;
+	border-width: 1px;
+}
+
+font{
+	color:#000000;
+	font-weight: bold;
+}
+
+input{
+	font-size:16px; 
+}
+
+textarea{
+	font-size:16px;
+}
+
+#space{
+	padding: 15px;
+}
+
+#threatName{
+	width:600px;
+}
+
+.centerContent{
+	height:250px;
+	width:600px;
+	rows:10;
+	cols:20;
+	wrap: hard;
+	resize: none;
+}
+
+.bottomContent{
+	height:150px;
+	width:300px;
+	cols:20;
+	wrap: hard;
+	resize: none;
+}
+
+.lookupButton{
+	width:100px;
+	height:35px;
+	margin:10px;
+}
+
+.addThreat{
+	width:200px;
+	height:35px;
+}
+
+.threatEditContainer{
+	display:inline-block;
+	margin:10px;
+	vertical-align: top;
+}
+
+.error{
+	color:red;
+	font-weight: bold;
+}
+

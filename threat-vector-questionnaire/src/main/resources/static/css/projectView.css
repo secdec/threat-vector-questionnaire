@@ -1,0 +1,107 @@
+.filterItems{
+	list-style-type:none;
+	padding:0px;
+	margin:0 none;
+}
+
+.space{
+	padding: 15px;
+}
+
+.noBullets{
+	list-style-type: none;
+}
+
+.btn.initalizeScanbutton{
+	color:#000000;
+	background-color: #4daaf6;
+	border-top-color: #2196f3;
+	border-top-width: 1px;
+	border-radius:0px;
+	margin: 0 0 0 0;
+	font-weight:bold;
+}
+
+.initializeScanContainer{
+	border:1px solid black;
+	min-width:200px;
+}
+
+.progress{
+	border:1px solid black;
+	height:20px
+}
+.addMargin{
+	margin: 10px 0px 10px 0px;
+}
+
+.viewDropdown{
+	height:30px;
+	border-radius: 8px;
+}
+
+
+.sideFilters{
+	border:1px solid black;
+	min-width:200px;
+	min-height: 650px;
+}
+
+.centerText{
+	text-align: center;
+}
+
+.centerWell{
+	margin:auto;
+} 
+
+.filterItems >li{
+	padding:5px;
+}
+
+.noBorderList >li{
+	border:none;
+}
+
+.noBullets > li{
+	list-style: none;
+}
+.filterItem{
+	text-align:left;
+}
+
+.filterHeader{
+	color:black;
+	background-color: #4daaf6;
+	border-radius:0px;
+}
+
+.filterDropwdown{
+	color:black;
+	border-radius:0px;
+}
+
+.accordion-toggle:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e114";
+    float: right;
+    color: black; 
+}
+.accordion-toggle.collapsed:after {
+    content: "\e080";
+}
+.noBorder{
+	border:0px;
+}
+
+.navBorder{
+	border: 1px solid #17539a;
+}
+
+.navRightBorder{
+	border-right: 1px solid #17539a;
+}
+
+.activeView{
+	background-color: #dddddd;
+}
