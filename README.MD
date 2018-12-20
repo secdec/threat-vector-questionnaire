@@ -1,4 +1,4 @@
-![tv-logo](resources/TV-Logo.png?raw=true "tv-logo")
+![tv-logo](https://user-images.githubusercontent.com/35819157/50309665-aa806b80-046d-11e9-83f0-9882d1cb71d4.png)
 
 #Summary
 The Threat-Vector-Questionnaire is an interactive GUI used to capture the architectural knowledge. This functionality provides the developers with an interactive and easy to use GUI to capture the design knowledge (security patterns as well as technical design decisions) around security architecture of the application. The goal was to develop a threat generation module that can leverage software requirements to generate threats. 
