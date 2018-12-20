@@ -18,6 +18,6 @@ The web application does not support Internet Explorer.
 # For Developers & Contributors
 ## Build Instructions
 1. Clone Threat-Vector-Questionnaire -https://github.com/secdec/threat-vector-questionnaire.git
-2. (Build from Source Instructions)[https://github.com/secdec/threat-vector-questionnaire/wiki/Building-From-Source]
+2. (Build from Source Instructions) [https://github.com/secdec/threat-vector-questionnaire/wiki/Building-From-Source]
 ## License
 Licensed under the [Apache-2.0](https://github.com/secdec/threat-vector-questionnaire/blob/master/LICENSE) License.
